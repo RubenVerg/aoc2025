@@ -1,0 +1,13 @@
+in←'@'=↑' '<⇾⊆⎕file→Read"input/4.txt"
+
+rots  ⇇ 1↓∨⍮⊞⍨0‿¯1‿1 ⋄
+Part1 ⇇ ⦅+/·,⦅⊢∧4≤·+/rots⌽⬚0ᓗ⊢⦆  ⊸<⦆ ⋄
+Part2 ⇇ ⦅+/·,⦅⊢∧4≤·+/rots⌽⬚0ᓗ⊢⦆⍣≡⊸<⦆
+
+start←⎕unix ⋄
+⎕←Part1 in ⋄
+mid←⎕unix ⋄
+⎕←Part2 in ⋄
+end←⎕unix ⋄
+⎕←mid-start ⋄
+⎕←end-mid
