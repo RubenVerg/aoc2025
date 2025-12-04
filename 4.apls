@@ -1,0 +1,14 @@
+#!/usr/local/bin/dyalogscript
+
+⎕io←0
+
+in←'@'=↑(⊃∘⎕NGET 1,⍨⊂)'input/4.txt'
+
+Part1←+⌿⍤,(1 1∘⌷∧4≥+⌿⍤,)⍤⊢⌺3 3
+Part2←+⌿⍤,(1 1∘⌷∧4<+⌿⍤,)⍤⊢⌺3 3⍣≡⍛<
+
+⎕←'results'
+⎕←Part1 in
+⎕←Part2 in
+
+⎕←''
