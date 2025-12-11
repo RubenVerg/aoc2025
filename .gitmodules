@@ -1,0 +1,3 @@
+[submodule "bqn-smt"]
+	path = bqn-smt
+	url = https://codeberg.org/dzaima/bqn-smt.git
